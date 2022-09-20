@@ -1,0 +1,638 @@
+.heroSection {
+ width: 100%;
+ /* background-color: #673de6; */
+ height: 55rem;
+ border-bottom-left-radius: 5rem;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ padding: 1rem 20rem;
+ background: #673de6;
+}
+
+.heroSection::before {
+ content: '';
+ width: 45rem;
+ height: 48rem;
+ background: url('/mainImage.png') no-repeat center;
+ position: absolute;
+ top: 0rem;
+ left: -5rem;
+ background-size: 100% 100%;
+ z-index: 1;
+}
+
+.heroSection::after {
+ content: '';
+ width: 45rem;
+ height: 48rem;
+ background: url('/bgImage.webp') no-repeat center;
+ position: absolute;
+ top: 0rem;
+ right: -5rem;
+ background-size: 100% 100%;
+ z-index: 1;
+}
+
+.heroSection .heroContainer {
+ width: 56rem;
+ z-index: 2;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ flex-direction: column;
+}
+
+.heroContainer h1 {
+ font-size: 4rem;
+ color: white;
+ width: 100%;
+ text-align: center;
+}
+
+.heroContainer span {
+ width: 100%;
+ font-size: 6rem;
+ font-weight: 600;
+ text-align: center;
+ color: white;
+}
+
+.heroContainer span sup {
+ font-size: 3rem;
+ font-weight: 600;
+ text-align: center;
+ color: white;
+}
+
+.heroContainer span span {
+ font-size: 2.5rem;
+ font-weight: 600;
+ text-align: center;
+ color: white;
+}
+
+.heroContainer p {
+ width: 85%;
+ font-size: 2rem;
+ font-weight: 500;
+ color: white;
+ text-align: center;
+ margin-top: 2rem;
+}
+
+.time {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ gap: 2rem;
+ margin-top: 1.5rem;
+}
+
+.time span {
+ width: 5rem;
+ height: 5rem;
+ padding: 1rem;
+ font-size: 3rem;
+ background-color: #fff;
+ color: #2f1c6a;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 2rem;
+ position: relative;
+}
+
+.time span::after {
+ content: attr(data);
+ position: absolute;
+ bottom: -1.8rem;
+ left: 50%;
+ transform: translateX(-50%);
+ font-size: 1.5rem;
+ color: #fff;
+}
+
+.heroContainer p:last-child::before {
+ width: 12px;
+ content: url(https://assets.hostinger.com/images/index-new/check-82319b207b.svg);
+ display: inline-block;
+ margin-right: 5px;
+}
+
+.button {
+ font-size: 2rem;
+ font-weight: 800;
+ color: white;
+ width: 25rem;
+ height: 4.5rem;
+ background-color: #fc5185;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 5rem;
+ margin: 3rem 0;
+ cursor: pointer;
+ transition: all ease .2s;
+}
+
+.button:hover {
+ background-color: #d1265a;
+ box-shadow: 0 0 10rem .1rem rgba(0, 0, 0, 0.489);
+}
+
+.trustSection {
+ width: 100%;
+ padding: 4rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 5rem;
+ flex-wrap: wrap;
+}
+
+.trustSection path {
+ fill: #d0c4f2;
+}
+
+.pricingTable {
+ width: 100%;
+ padding: 1rem 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.container {
+ padding: 2rem 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ gap: 2rem;
+ transition: all .2s ease;
+}
+
+.container h1 {
+ font-size: 3rem;
+ font-weight: 700;
+ color: #2f1c6a;
+ text-align: center;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container p {
+ font-size: 1.5rem;
+ font-weight: 600;
+ color: #727586;
+ max-width: 54rem;
+ text-align: center;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ padding: 0 1rem;
+}
+
+
+.table {
+ border-radius: 2rem 0 2rem 0;
+ box-shadow: 0 0 1rem grey;
+ width: 80vw;
+ overflow: hidden;
+}
+
+.tableheader {
+ border-radius: 2rem 0 2rem 0;
+ text-align: center;
+ font-size: 3rem;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-weight: 800;
+ color: white;
+ width: 100%;
+ padding: 2rem 0;
+ background-color: #673de6;
+}
+
+.tabledata {
+ width: 100%;
+ padding: 2rem 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 2rem;
+ transition: all ease .2s;
+}
+
+.tablefooter {
+ width: 100%;
+ padding: 2rem;
+ font-size: 2rem;
+ color: #2f1c6a;
+ text-align: center;
+ border-top: solid 2px #dadce0;
+ font-weight: 500;
+ cursor: pointer;
+ color: #2f1c6a;
+ text-decoration: underline;
+}
+
+.data {
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ flex-direction: column;
+ padding: 1rem;
+ width: 29rem;
+ gap: 1rem;
+}
+
+.data p::before {
+ width: 12px;
+ content: url(https://assets.hostinger.com/images/index-new/check-82319b207b.svg);
+ display: inline-block;
+ margin-right: 5px;
+}
+
+.data p {
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ color: black !important;
+ font-weight: 400 !important;
+ text-align: left !important;
+}
+
+.data p b {
+ font-weight: 800;
+ color: #2f1c6a;
+}
+
+.data[name='center'] {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ position: relative;
+ padding: 1rem 2rem;
+}
+
+.data[name='center']::before, .data[name='center']::after {
+ content: '';
+ width: 3px;
+ height: 100%;
+ background: linear-gradient(to bottom, #4923b9, #c0a9ff);
+ position: absolute;
+ top: 0;
+ border-radius: 1rem;
+ left: 0;
+}
+
+.data[name='center']::after {
+ background: linear-gradient(to top, #4923b9, #c0a9ff);
+ left: unset;
+ right: 0 !important;
+}
+
+.data[name='center'] h1 {
+ font-size: 4.5rem;
+ line-height: 1rem;
+}
+
+.data[name='center'] h1 span {
+ font-size: 2rem;
+}
+
+.data[name='center'] h1 sup {
+ font-size: 2.5rem;
+}
+
+.testimonials {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-top: 5rem;
+ position: relative;
+}
+
+.reviewContainer {
+ width: 60vw;
+ background-color: #673de6;
+ border-radius: 2rem 2rem 0 0;
+ display: none;
+}
+
+.activeReview {
+ display: block;
+}
+
+.reviewHeader {
+ width: 100%;
+ padding: 3rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.reviewHeader h1 {
+ width: 55%;
+ font-size: 3.5rem;
+ font-weight: 500;
+ color: white;
+}
+
+.btns {
+ width: 15%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.btns span {
+ width: 4rem;
+ height: 4rem;
+ border-radius: 50%;
+ border: solid 2px rgba(255, 255, 255, 0.745);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+}
+
+.btns span:first-child {
+ transform: rotate(180deg);
+}
+
+.btns svg {
+ fill: white;
+}
+
+.review {
+ width: 100%;
+ padding: 2rem 5rem;
+ font-size: 2rem;
+ font-style: italic;
+ font-weight: 500;
+ color: white;
+ position: relative;
+}
+
+.review::before {
+ content: '"';
+ font-size: 5rem;
+ position: absolute;
+ top: 0rem;
+ left: 2rem;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.review::after {
+ content: '"';
+ font-size: 5rem;
+ position: absolute;
+ bottom: 0rem;
+ right: 2rem;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ rotate: 180deg;
+}
+
+.reviewFooter {
+ width: 100%;
+ padding: 1rem 5rem;
+}
+
+.reviewFooter span {
+ font-size: 2rem;
+ color: white;
+ font-weight: 500;
+}
+
+.serviceSection {
+ width: 100vw;
+ padding: 2rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.serviceContainer {
+ width: 70vw;
+ border-radius: 2rem;
+ /* background: linear-gradient(to bottom, #e2ae35, transparent); */
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-direction: column;
+}
+
+.serviceData {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ z-index: 3;
+ gap: 1rem;
+}
+
+.serviceContainer h1 {
+ width: 100%;
+ font-size: 4rem;
+ font-weight: 700;
+ color: #2f1c6a;
+ padding: 1rem 2rem;
+ text-align: center;
+}
+
+.service {
+ padding: 0 2rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 30rem;
+ height: 15rem;
+ border: solid 2px #2f1c6a;
+ border-radius: 2rem;
+}
+
+.serviceContainer .service h1 {
+ padding: 0 !important;
+ width: 100%;
+ font-size: 2rem;
+ color: #2f1c6a;
+ text-align: start;
+}
+
+.serviceContainer .service p {
+ width: 100%;
+ font-size: 1.5rem;
+ color: rgb(84, 84, 84);
+ font-weight: 500;
+}
+
+.domainSection{
+ width: 100%;
+ padding: 8rem 0;
+ background: #f4f5ff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ gap: 1.5rem;
+}
+
+.domainSection h1{
+ font-size: 4rem;
+ color: #2f1c6a;
+}
+.domainSection p{
+ width: 60%;
+ font-size: 1.5rem;
+ color: #2f1c6a;
+ text-align: center;
+ font-weight: 700;
+}
+
+.inputDiv{
+ width: 40%;
+ height: 4rem;
+ position: relative;
+}
+.inputDiv input{
+ width: 100%;
+ height: 100%;
+ outline: none;
+ border-radius: 3rem;
+ padding: 0 2rem;
+ font-size: 1.8rem;
+ border: none;
+ box-shadow: 0 0 .4rem grey;
+}
+
+.inputDiv span{
+ position: absolute;
+ top: 50%;
+ right: 0rem;
+ transform: translateY(-50%);
+ width: 4rem;
+ height: 4rem;
+ border-radius: 2rem;
+ background-color: #673de6;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+ transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) .2s;
+}
+
+.inputDiv span:hover{
+ width: 10rem;
+}
+.inputDiv span svg{
+ fill: white;
+}
+
+
+@media (max-width: 1115px) {
+ .reviewContainer {
+  width: 80vw;
+ }
+}
+
+@media (max-width: 990px) {
+ .heroSection {
+  padding: 1rem 0;
+ }
+
+ .heroSection::before {
+  width: 30rem;
+  height: 34rem;
+ }
+
+ .heroSection::after {
+  width: 30rem;
+  height: 34rem;
+ }
+
+ .heroContainer {
+  width: 100%;
+ }
+
+ .reviewHeader h1 {
+  width: 80%;
+  font-size: 3rem;
+ }
+
+ .btns span {
+  width: 3rem;
+  height: 3rem;
+ }
+
+ .tabledata .data:first-child {
+  display: none;
+ }
+
+ .data[name='center']::before {
+  display: none;
+ }
+}
+
+@media (max-width: 680px) {
+ .heroSection::before {
+  display: none;
+ }
+
+ .heroSection::after {
+  display: none;
+ }
+
+ .tabledata {
+  flex-direction: column;
+ }
+
+ .data[name='center']::after {
+  display: none;
+ }
+
+ .reviewHeader h1 {
+  font-size: 2.5rem;
+ }
+
+ .heroContainer h1 {
+  font-size: 3rem;
+ }
+
+ .heroContainer span {
+  font-size: 4rem;
+ }
+
+ .heroContainer span sup {
+  font-size: 1.5rem;
+ }
+
+ .heroContainer span span {
+  font-size: 1.5rem;
+ }
+
+ .heroContainer p {
+  font-size: 1.7rem;
+  width: 29rem;
+ }
+
+ .review {
+  font-size: 1.7rem;
+ }
+
+ .tableheader {
+  font-size: 2.5rem;
+ }
+
+ .reviewHeader .btns {
+  gap: 1rem;
+ }
+
+ .reviewHeader .btns span {
+  width: 2.8rem;
+  height: 2.8rem;
+ }
+}

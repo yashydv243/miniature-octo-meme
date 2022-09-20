@@ -1,0 +1,400 @@
+.header {
+  width: 100vw;
+  height: 7rem;
+  background: transparent !important;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease .2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-bottom-left-radius: 2rem;
+  gap: 15rem;
+}
+
+.logo {
+  width: 15rem;
+  height: 3rem;
+  background: url('/hostingerLogo.svg') center no-repeat;
+  background-size: 100% 100%;
+}
+
+.logo path {
+  fill: white;
+  transition: all ease .2s;
+}
+
+.space {
+  width: 100vw;
+  height: 7rem;
+  background-color: #673de6;
+}
+
+
+.leftArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  transition: all ease .2s;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all ease .2s;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.dropdown{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40rem;
+  padding: 3rem !important;
+  background-color: rgb(243, 243, 243);
+  border-radius: .2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(100%) scale(0.92);
+  pointer-events: none;
+  opacity: 0;
+  visibility: none;
+  transition: all ease .2s;
+  gap: 2rem;
+}
+
+.activeDropdown{
+  transform: translate(-50%, 110%) scale(1);
+  pointer-events: all;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown::before{
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fff;
+  border-radius: .2rem;
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: rgb(243, 243, 243);
+}
+
+.layer{
+  width: 100%;
+  padding: .2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  transition: all ease .2s;
+}
+
+.layer:hover{
+  scale: 1.08;
+}
+
+.layer .information{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.layer .information h1{
+  color: #321f65;
+  font-size: 2rem;
+}
+.layer .information p{
+  color: #321f65;
+  font-weight: 400;
+}
+
+
+.navigation svg {
+  fill: white;
+  margin-top: 4px;
+  transition: all ease .2s;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  border: solid 2px white;
+  border-radius: 2rem;
+  transition: all ease .2s;
+}
+
+.button svg {
+  transition: all ease .2s;
+}
+
+.navigation:hover, .button:hover {
+  color: #cab8ff;
+}
+
+.navigation:hover svg, .button:hover svg {
+  fill: #cab8ff;
+}
+
+.navChange {
+  background-color: #fff !important;
+  box-shadow: .1rem 0 1rem grey;
+}
+
+.navChange .logo path {
+  fill: black;
+}
+
+.navChange svg {
+  fill: black;
+}
+
+.navChange .button {
+  fill: black;
+  border: 2px black solid;
+  color: black;
+}
+
+.navChange .navigation {
+  color: black;
+}
+
+.navChange .navigation:hover {
+  color: #737373 !important;
+}
+
+.navChange .navigation:hover svg {
+  fill: #737373 !important;
+}
+
+.navChange .button:hover {
+  color: #737373 !important;
+}
+
+.navChange .button:hover svg {
+  fill: #737373 !important;
+}
+
+.navbutton {
+  display: none;
+}
+
+.noShadow {
+  box-shadow: none !important;
+}
+
+.mobileNav {
+  transform: translateX(110%) !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.mobileNav .leftArea{
+  display: none;
+}
+
+@media (max-width: 1099px) {
+  .navChange .navbutton span {
+    background-color: #000;
+  }
+
+  .navChange .navbutton:hover span {
+    background-color: #737373;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .button[type='cart'] {
+    display: block;
+  }
+
+  .button[type='cart'] span {
+    display: none;
+  }
+
+  .header {
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .leftArea {
+    gap: 2rem;
+  }
+
+  .mobileNav {
+    transform: translateX(110%);
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all ease .2s;
+    padding-top: 7rem;
+  }
+
+  .mobileNav .button[type='cart']{
+    display: none;
+  }
+
+  .activeMobileNav {
+    transform: translateX(0%) !important;
+    pointer-events: all !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .navbutton {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  .navbutton span {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1rem;
+    transition: all ease .2s;
+  }
+
+  .navbutton:hover span {
+    background-color: #cab8ff;
+  }
+
+  .mobileNav .navigation {
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+  }
+
+  .mobileNav .leftArea{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mobileNav .navigation svg{
+    fill: black;
+  }
+
+  .mobileNav .button{
+    color: black;
+    display: flex;
+    border: solid 2px black;
+  }
+   .mobileNav .button svg {
+    fill: black;
+  }
+   .mobileNav .button span {
+    display: block;
+    color: black;
+  }
+
+
+
+  .dropdown{
+    position: relative;
+    width: 100%;
+    padding: 1rem 0 !important;
+    background-color: rgb(232, 232, 232);
+    border-radius: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: none;
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+    transition: all ease .2s;
+    display: none;
+    gap: 2rem;
+  }
+  
+  .activeDropdown{
+    display: block;
+  }
+  
+  .dropdown::before{
+    content: '';
+    display: none;
+  }
+  
+  .layer{
+    width: 100%;
+    padding: .2rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    transition: all ease .2s;
+  }
+  
+  .layer:hover{
+    scale: 1.08;
+  }
+  
+  .layer .information{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+  }
+  
+  .layer .information h1{
+    color: #321f65;
+    font-size: 2rem;
+  }
+  .layer .information p{
+    display: none;
+  }
+
+  .dropdown svg{
+    display: none;
+  }
+
+}

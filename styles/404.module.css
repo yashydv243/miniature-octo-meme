@@ -1,0 +1,73 @@
+.mainDiv{
+ width: 100%;
+ height: calc(100vh - 8rem);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.mainDiv h1{
+ font-size: 25rem;
+ color: #132e3f;
+ text-shadow: 0 0 2rem #081219c9;
+ user-select: none;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ line-height: 16rem;
+}
+
+.mainDiv p {
+ font-size: 4rem;
+ font-weight: 600;
+ color: white;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ text-align: center;
+}
+.mainDiv p span{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ color: #2bdab7;
+}
+
+.themeButton {
+ font-size: 3rem;
+ color: white;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ text-decoration: none;
+ padding: 1rem 2rem;
+ background-color: #22ae92;
+ margin: 2rem 0;
+ border-radius: 1rem;
+ box-shadow: 0 0 20px #27c4a5,0 0 20px #27c4a5;
+}
+
+.themeButton:active{
+ box-shadow: 0 0 20px #2b4352;
+ background-color: #2b4352;
+}
+
+@media (max-width: 420px) {
+ .mainDiv h1{
+  font-size: 20rem;
+ }
+
+ .mainDiv p {
+  font-size: 3.5rem;
+ }
+
+ .themeButton {
+  font-size: 2rem;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: #22ae92;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #27c4a5,0 0 20px #27c4a5;
+ }
+ 
+ .themeButton:active{
+  box-shadow: 0 0 20px #2b4352;
+  background-color: #2b4352;
+ }
+}
