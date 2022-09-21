@@ -484,6 +484,7 @@
 .domainSection h1{
  font-size: 4rem;
  color: #2f1c6a;
+ text-align: center;
 }
 .domainSection p{
  width: 60%;
@@ -574,6 +575,9 @@
 
  .data[name='center']::before {
   display: none;
+ }
+ .domainSection .inputDiv{
+  width: 80%;
  }
 }
 
